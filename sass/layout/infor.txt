@@ -1,0 +1,1 @@
+Essa pasta contem tudo o que faz parte do layout do site. header, footer, main etc. Ela tambem pode ser chamada de partials.

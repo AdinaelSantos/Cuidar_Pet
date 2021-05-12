@@ -1,0 +1,1 @@
+Tambem conhecida como utilities ou helpers. Essa pasta reune todas as ferramentas e auxiliares do SASS no projeto. A regra dessa pasta é que não deve ser produzida nehuma linha de codigo quando compilada.

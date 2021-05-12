@@ -1,0 +1,1 @@
+Essa pasta contem todos os componentes do site. partes menores do site, diferente de layout que engloba o contexto global do site. Essa pasta tambem pode ser chamada de modules.

@@ -1,0 +1,17 @@
+{
+  "name": "cuidar_pet",
+  "version": "1.0.0",
+  "description": "Template voltado a um pet shoping, com o objetivo de melhor conhecimentos adquiridos e e buscar boas praticas no desenvolvimento web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mainSass": "sass --watch sass/main.scss:assets/css/main.css",
+    "mainCompressedSass": "sass --watch sass/main.scss:assets/css/mainCompressed.css --style compressed"
+  },
+  "author": "Noel Almeida",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.0"
+  }
+}
