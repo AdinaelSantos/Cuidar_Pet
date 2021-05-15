@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
-    "bootstrap": "^5.0.0"
+    "bootstrap": "^5.0.1"
   }
 }

@@ -1,0 +1,39 @@
+///breackpoints: 320px (initial), 425px, 768px
+.contatos-pessoal, .contatos-sociais{
+    padding: .3rem 0;
+    a{
+        color:white;
+        font-size: $fontSize_1;
+        font-weight: normal;
+        letter-spacing: $letter-spacing_1;
+        @media screen and(min-width:1024px){
+            font-size: $fontSize_2;
+            letter-spacing: $letter-spacing_2;
+        }
+    }
+}
+.contatos-pessoal{
+    a {
+        display: block;
+        width: 100%;
+        margin-bottom: $margin_1;
+        
+        i{
+            margin-right: $margin_1;
+        }
+        @media screen and(min-width: 425px){
+            display: inline;
+            &:last-child{
+                margin-left: 1rem;
+            }
+            
+        }
+    }
+}
+.contatos-sociais{
+    a{
+        padding: 0 .3rem;
+    }
+}
+
+

@@ -114,4 +114,64 @@ table {
   border-spacing: 0;
 }
 
+.header .contatos {
+  background-image: linear-gradient(to right, #107acb, #2a9134);
+  width: 100%;
+  height: auto;
+}
+.header .contatos .dim {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+  padding: 0.5rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .header .contatos .dim {
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+.contatos-pessoal, .contatos-sociais {
+  padding: 0.3rem 0;
+}
+.contatos-pessoal a, .contatos-sociais a {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 1024px) {
+  .contatos-pessoal a, .contatos-sociais a {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+  }
+}
+
+.contatos-pessoal a {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+.contatos-pessoal a i {
+  margin-right: 0.3rem;
+}
+@media screen and (min-width: 425px) {
+  .contatos-pessoal a {
+    display: inline;
+  }
+  .contatos-pessoal a:last-child {
+    margin-left: 1rem;
+  }
+}
+
+.contatos-sociais a {
+  padding: 0 0.3rem;
+}
+
 /*# sourceMappingURL=main.css.map */

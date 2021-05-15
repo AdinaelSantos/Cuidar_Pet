@@ -1,0 +1,18 @@
+.header .contatos{
+   background-image: linear-gradient(to right, #107acb, #2a9134);
+    width: 100%;
+    height: auto;
+    .dim{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+        padding: .5rem 0;
+        @include centralizar_1;
+        @media screen and (min-width:768px){
+            flex-direction: row;
+            @include centralizar_2;
+        }
+    }
+}
