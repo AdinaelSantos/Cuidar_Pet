@@ -1,6 +1,15 @@
 ///Tamanho de Fonte:
+
+$colorPrimary: #2a9134;
+$colorSecundary:#107acb;
+
 $fontSize_1: .8rem;
-$fontSize_2: .9rem;
+$fontSize_2: .9rem; ///usada
+$fontSize_3: 1.2rem;
+$fontSize_4: 1.5rem;
+$fontSize_5: 1.8rem;
+$fontSize_6: 6rem;
+
 
 /// Espacamento entre letras:
 $letter-spacing_1: 1px;
@@ -8,3 +17,10 @@ $letter-spacing_2: 1px;
 
 ///Margin:
 $margin_1: .3rem;
+
+$padding-Y0: .5rem 0;
+$padding-Y1: 1rem 0;
+$padding-Y2: 1.5rem 0;
+$padding-Y3: 2rem 0;
+$padding-Y4: 2.5rem 0;
+$padding-Y5: 3rem 0;

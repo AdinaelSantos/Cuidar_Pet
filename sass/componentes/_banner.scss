@@ -1,0 +1,46 @@
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/img/bg_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.bloco {
+    @include centralizar;
+    @include blockSize_1;
+    p{
+        @include styleFont(inherit, 3rem, bolder, $white);
+        text-align: center;
+    }
+    a{
+        background-color: $colorPrimary;
+        width: 150px;
+        height: 50px;
+        border-radius: 5px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        word-spacing: .3rem;
+        @include styleFont(inherit, $fontSize_2, bolder, $white);
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $colorPrimary;
+            color: $colorPrimary;
+        }
+    }
+    @media screen and (min-width:768px){
+        @include blockSize_2;
+        p{
+            font-size: 4.2rem;
+        }
+        }
+    @media screen and (min-width:1024px){
+        @include blockSize_2;
+        p{
+            font-size: 6rem;
+        }
+        }
+   }

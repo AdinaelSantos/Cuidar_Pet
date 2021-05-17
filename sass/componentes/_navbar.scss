@@ -1,0 +1,18 @@
+.navbar{
+    width: 100%;
+    padding: $padding-Y2;
+    .container-fluid{
+        width: 100%;
+        .navbar-collapse{
+            width: 100%;
+            justify-content: flex-end;
+        }
+    }
+}
+.navbar-brand{
+    @include styleFont(inherit, 2.2rem, bolder, inherit);
+    i{
+        color: $colorPrimary;
+        margin-right: .6rem;
+    }
+}

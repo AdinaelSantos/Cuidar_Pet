@@ -1,8 +1,29 @@
-@mixin centralizar_1 {
+@mixin blockSize_1 {
     width: 90%;
+    height: inherit;
     margin: 0 auto;
 }
-@mixin centralizar_2 {
+@mixin blockSize_2 {
     width: 60%;
+    height: inherit;
     margin: 0 auto;
+}
+@mixin styleFont($fontFamily, $fontSize, $fontWeight, $fontColor){
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $fontColor;
+}
+@mixin icon ($margin, $padding, $fontSize, $fontColor){
+    margin: $margin;
+    padding: $padding;
+    font-size: $fontSize;
+    color: $fontColor;
+}
+
+@mixin centralizar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

@@ -1,5 +1,5 @@
 .header .contatos{
-   background-image: linear-gradient(to right, #107acb, #2a9134);
+   background-image: linear-gradient(to right, $colorSecundary, $colorPrimary);
     width: 100%;
     height: auto;
     .dim{
@@ -9,10 +9,16 @@
         align-items: center;
         height: inherit;
         padding: .5rem 0;
-        @include centralizar_1;
+        @include blockSize_1;
         @media screen and (min-width:768px){
             flex-direction: row;
-            @include centralizar_2;
+            @include blockSize_2;
         }
+    }
+}
+.header nav{
+    @include blockSize_1;
+    @media screen and (min-width:768px) {
+        @include blockSize_2;
     }
 }
