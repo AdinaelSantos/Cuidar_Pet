@@ -11,7 +11,7 @@
     @include centralizar;
     @include blockSize_1;
     p{
-        @include styleFont(inherit, 3rem, bolder, $white);
+        @include styleFont(inherit, $fontSize_6, bolder, $white);
         text-align: center;
     }
     a{
@@ -34,13 +34,13 @@
     @media screen and (min-width:768px){
         @include blockSize_2;
         p{
-            font-size: 4.2rem;
+            font-size: $fontSize_7;
         }
         }
     @media screen and (min-width:1024px){
         @include blockSize_2;
         p{
-            font-size: 6rem;
+            font-size: $fontSize_8 !important;
         }
         }
    }
