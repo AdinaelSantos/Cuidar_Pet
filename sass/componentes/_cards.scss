@@ -1,0 +1,33 @@
+.s-cards-article{
+    position: relative;
+    @include centralizar_column;
+    background-color: $white;
+    border-radius: .5rem;
+    margin-top: 5rem;
+    .s-card-icon{
+        position: absolute;
+        top: -3.8rem;
+        background-color: $gray-300;
+        display: inline-block;
+        margin: .5rem;
+        @include circle(100px, 100px);
+        @include centralizar;
+        .icon-svg{
+            width: 90px;
+            height: 90px;
+            fill: $colorPrimary;
+            padding: 1rem;
+        }
+    }
+    .s-card-title{
+        margin: 5rem 0 1rem;
+        @include styleFont($titulos, $fontSize_4, bold, $gray-900);
+        text-transform: uppercase;
+    }
+    .s-paragraph{
+        @include styleFont($textos, $fontSize_3, normal, $gray-700);
+        padding: .5rem 1.5rem ;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+}

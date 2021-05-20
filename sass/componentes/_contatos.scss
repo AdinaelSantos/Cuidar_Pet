@@ -1,23 +1,13 @@
 ///breackpoints: 320px (initial), 425px, 768px
-.contatos-pessoal, .contatos-sociais{
-    padding: .3rem 0;
-    a{
-        color:white;
-        font-size: $fontSize_1;
-        font-weight: normal;
-        letter-spacing: $letter-spacing_1;
-        @media screen and(min-width:1024px){
-            font-size: $fontSize_2;
-            letter-spacing: $letter-spacing_2;
-        }
-    }
-}
 .contatos-pessoal{
     a {
+        @include styleFont(inherit, $fontSize_2, normal, $white);
         display: block;
         width: 100%;
         margin-bottom: $margin_1;
-        
+        &:hover{
+            text-decoration: underline;
+        }
         i{
             margin-right: $margin_1;
         }
@@ -32,7 +22,23 @@
 }
 .contatos-sociais{
     a{
+        color:white;
+        font-size: $fontSize_2;
+        font-weight: normal;
         padding: 0 .3rem;
+        &:hover{
+            transform: scale(1.4);
+        }
+    }
+}
+.contatos-pessoal, .contatos-sociais{
+    padding: .3rem 0;
+    a{
+        letter-spacing: $letter-spacing_1;
+        @media screen and(min-width:1024px){
+            font-size: $fontSize_2;
+            letter-spacing: $letter-spacing_2;
+        }
     }
 }
 

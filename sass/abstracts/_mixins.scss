@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 @mixin blockSize_2 {
-    width: 70% !important;
+    width: 70%;
     height: inherit;
     margin: 0 auto;
 }
@@ -23,7 +23,17 @@
 
 @mixin centralizar {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+@mixin centralizar_column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin circle($width, $hegth, $radius: 50%){
+    width: $width;
+    height: $hegth;
+    border-radius: $radius;
 }

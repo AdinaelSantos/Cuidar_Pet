@@ -1,6 +1,6 @@
 .navbar{
     width: 100%;
-    padding: 0 !important;
+    padding: 0;
     margin: 1rem 0;  ////R-media
     line-height: 3rem;
     .container-fluid{
@@ -16,7 +16,7 @@
     }
 }
 .navbar-brand{
-    @include styleFont(inherit, 2.2rem, bolder, inherit);
+    @include styleFont($titulos, 2.2rem, bolder, $black !important);
     i{
         color: $colorPrimary;
         margin-right: .6rem;
@@ -25,10 +25,11 @@
 .nav-item{
     .nav-link{
         margin-left: 1rem;
-        @include styleFont(inherit, $fontSize_2, bold, #2a9134 !important);
-        text-transform: uppercase;
+        @include styleFont($textos, $fontSize_3, bold, #2a9134 !important);
+        ///text-transform: uppercase;
         border-bottom: 2px solid $gray-100;
         margin-left: 0;
+        transition: color .5s, border-bottom 1s;
         &:hover{
             border-bottom: 2px solid #2a9134;
             color: $gray-300 !important;
@@ -45,27 +46,11 @@
         }
     }
     @media screen and(min-width:1140px) {
-.link-ativo{
-      color: #2a9134 !important;
-        border-bottom: 2px solid #2a9134;
-    
+    .link-ativo{
+        color: #2a9134;
+            border-bottom: 2px solid #2a9134;
+        
+        }
     }
-    }
-    ///.link-ativo{
-    ///    color: #2a9134 !important;
-    ///    border-bottom: 2px solid #2a9134;
-    ///
-    ///}
 }
-
-///&:first-child{
-///    color: #2a9134 !important;
-///    border-bottom: 2px solid #2a9134;
-///    margin-left: 0;
-///}
-
-///&:hover{
-///    color: #2a9134 !important;
-///    border-bottom: 2px solid #2a9134;
-///}
 

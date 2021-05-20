@@ -2,13 +2,15 @@
 
 $colorPrimary: #2a9134;
 $colorSecundary:#107acb;
+$banner-opacity:rgba(15, 14, 14, 0.2);
 
-$fontSize_1: .8rem;
-$fontSize_2: .9rem; ///usada
-$fontSize_3: 1.2rem;
-$fontSize_6: 3rem; ///usada
-$fontSize_7: 4rem;
-$fontSize_8: 4.7rem;
+$fontSize_1: 25px;
+$fontSize_2: .9rem; /// icons, links
+$fontSize_3: 1rem;   ///textos 1
+$fontSize_4: 1.4rem; ///subtitles
+$fontSize_6: 3rem;   ///display
+$fontSize_7: 4rem;   ///display
+$fontSize_8: 4.7rem; ///display
 
 
 /// Espacamento entre letras:
@@ -18,9 +20,17 @@ $letter-spacing_2: 1px;
 ///Margin:
 $margin_1: .3rem;
 
+///padding
 $padding-Y0: .5rem 0;
 $padding-Y1: 1rem 0;
 $padding-Y2: 1.5rem 0;
 $padding-Y3: 2rem 0;
 $padding-Y4: 2.5rem 0;
 $padding-Y5: 3rem 0;
+
+///Fonts
+///font-family: 'Lato', sans-serif;
+///font-family: 'Playfair Display SC', serif;
+$titulos:'Roboto Slab', serif;
+$textos:'Lato', sans-serif;
+
