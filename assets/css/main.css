@@ -898,9 +898,26 @@ table {
 }
 
 .s-conteiner-card {
+  position: relative;
   width: 100%;
   height: auto;
+  padding-bottom: 4rem;
   background-color: #e9ecef;
+}
+@media screen and (min-width: 1024px) {
+  .s-conteiner-card {
+    padding: 13rem 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .s-conteiner-card {
+    padding: 11rem 0;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .s-conteiner-card {
+    padding: 9rem 0;
+  }
 }
 .s-conteiner-card .s-cards {
   width: 90%;
@@ -910,11 +927,16 @@ table {
   flex-direction: column;
   justify-content: space-evenly;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .s-conteiner-card .s-cards {
     width: 70%;
     height: inherit;
     margin: 0 auto;
+    flex-direction: row;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -1101,12 +1123,23 @@ table {
   flex-direction: column;
   background-color: #fff;
   border-radius: 0.5rem;
-  margin-top: 5rem;
+  margin-top: 6rem;
+  transition: background-color 1s;
+}
+@media screen and (min-width: 1024px) {
+  .s-cards-article {
+    width: 32%;
+    margin-top: 0;
+  }
+  .s-cards-article:last-child {
+    margin-right: 0;
+  }
 }
 .s-cards-article .s-card-icon {
   position: absolute;
   top: -3.8rem;
   background-color: #dee2e6;
+  transition: background-color 1s;
   display: inline-block;
   margin: 0.5rem;
   width: 100px;
@@ -1135,9 +1168,38 @@ table {
   font-size: 1rem;
   font-weight: normal;
   color: #495057;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem 2rem;
   line-height: 1.5rem;
   text-align: center;
+}
+.s-cards-article .s-card-title, .s-cards-article .s-paragraph {
+  transition: color 1s;
+}
+.s-cards-article .s-card-link {
+  position: absolute;
+  bottom: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a9134;
+  color: #fff;
+  transition: background-color 1s, transform 1s;
+}
+.s-cards-article:hover {
+  background-color: #2a9134;
+}
+.s-cards-article:hover .s-card-title, .s-cards-article:hover .s-paragraph {
+  color: white;
+}
+.s-cards-article:hover .s-card-icon, .s-cards-article:hover .s-card-link {
+  background-color: white;
+}
+.s-cards-article:hover .s-card-link {
+  color: #2a9134;
+  transform: translateX(1rem);
 }
 
 /*# sourceMappingURL=main.css.map */
