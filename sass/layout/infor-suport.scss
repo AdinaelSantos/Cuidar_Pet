@@ -1,0 +1,60 @@
+.t-infor-suport{
+    width: 100%;
+    height: auto;
+    background-color: $white;
+}
+.t-infor{
+    @include blockSize_1;
+    @include centralizar_column;
+    .t-infor-img{
+        
+        img{
+            top: 100px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .t-infor-img, .t-infor-article{
+        width:100%;
+        max-width: 400px;
+    }
+    @media screen and (min-width:1024px){
+        @include blockSize_2;
+        flex-direction: row;
+        justify-content: space-between;
+        .t-infor-img{
+            max-width:40%;
+        }
+        .t-infor-article{
+            max-width: 100%;
+        }
+
+    }
+    
+}  
+.t-infor-article{
+    h2{
+        @include styleFont($titulos, $fontSize_5, bolder, $gray-800);
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+}
+.t-article-container{
+   .t-article{
+       margin: 1rem;
+       display: flex;
+       .img{
+          @include centralizar;
+           @include circle(80px,80px);
+           background-color: $colorPrimary;
+           @include icon(0, 0, $fontSize_5, $white);
+       }
+       .info{
+           margin-left: .5rem;
+           h3{
+            @include styleFont($textos, $fontSize_3, bold, $gray-800);
+           }
+       }
+   }
+}
+///$margin, $padding, $fontSize, $fontColor

@@ -940,6 +940,81 @@ table {
   }
 }
 
+.t-infor-suport {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+
+.t-infor {
+  width: 90%;
+  height: inherit;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.t-infor .t-infor-img img {
+  top: 100px;
+  width: 100%;
+  height: 100%;
+}
+.t-infor .t-infor-img, .t-infor .t-infor-article {
+  width: 100%;
+  max-width: 400px;
+}
+@media screen and (min-width: 1024px) {
+  .t-infor {
+    width: 70%;
+    height: inherit;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .t-infor .t-infor-img {
+    max-width: 40%;
+  }
+  .t-infor .t-infor-article {
+    max-width: 100%;
+  }
+}
+
+.t-infor-article h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.9rem;
+  font-weight: bolder;
+  color: #343a40;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.t-article-container .t-article {
+  margin: 1rem;
+  display: flex;
+}
+.t-article-container .t-article .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #2a9134;
+  margin: 0;
+  padding: 0;
+  font-size: 1.9rem;
+  color: #fff;
+}
+.t-article-container .t-article .info {
+  margin-left: 0.5rem;
+}
+.t-article-container .t-article .info h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
 .contatos-pessoal a {
   font-family: inherit;
   font-size: 0.9rem;
@@ -1190,6 +1265,7 @@ table {
 }
 .s-cards-article:hover {
   background-color: #2a9134;
+  cursor: pointer;
 }
 .s-cards-article:hover .s-card-title, .s-cards-article:hover .s-paragraph {
   color: white;
@@ -1200,6 +1276,20 @@ table {
 .s-cards-article:hover .s-card-link {
   color: #2a9134;
   transform: translateX(1rem);
+}
+
+#diamnic-card {
+  background-color: #2a9134;
+}
+#diamnic-card .s-card-title, #diamnic-card .s-paragraph {
+  color: white;
+}
+#diamnic-card .s-card-icon, #diamnic-card .s-card-link {
+  background-color: white;
+}
+#diamnic-card .s-card-link {
+  color: #2a9134;
+  transform: translateX(0);
 }
 
 /*# sourceMappingURL=main.css.map */

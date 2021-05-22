@@ -52,32 +52,33 @@
         color: $white;
         transition: background-color 1s, transform 1s;
     }
-    &:hover{
+        &:hover{
+            background-color: $colorPrimary;
+            cursor: pointer;
+            .s-card-title, .s-paragraph{
+                 color: white
+            }
+            .s-card-icon,.s-card-link{
+                background-color: white;
+            }
+            .s-card-link{
+                color: $colorPrimary;
+                transform: translateX(1rem);
+            }
+        }
+
+}
+//// classe adicionada ou retirada dinamicamente ao passar o mouse nos cards.
+    #diamnic-card{
         background-color: $colorPrimary;
         .s-card-title, .s-paragraph{
-             color: white
-        }
-        .s-card-icon,.s-card-link{
-            background-color: white;
-        }
-        .s-card-link{
-            color: $colorPrimary;
-            transform: translateX(1rem);
-        }
+            color: white
+       }
+       .s-card-icon,.s-card-link{
+        background-color: white;
     }
-}
-
-//// classe adicionada ou retirada dinamicamente ao passar o mouse nos cards.
-    ///#diamnic-card{
-    ///    background-color: $colorPrimary;
-    ///    .s-card-title, .s-paragraph{
-    ///        color: white
-    ///   }
-    ///   .s-card-icon,.s-card-link{
-    ///    background-color: white;
-    ///}
-    ///.s-card-link{
-    ///    color: $colorPrimary;
-    ///    transform: translateX(0);
-    ///}
-    ///}
+    .s-card-link{
+        color: $colorPrimary;
+        transform: translateX(0);
+    }
+    }
