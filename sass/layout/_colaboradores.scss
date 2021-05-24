@@ -1,0 +1,31 @@
+.colaboradores-container{
+    background-color: $colorPrimary;
+    width: 100%;
+    .colaboradores-flex{
+        @include blockSize_1;
+        @include centralizar_column;
+        @media screen and (min-width:1024px){
+            @include blockSize_2;
+        }
+    }
+}
+.pessoas, .profissinais, .Pordutos, .animais{
+    @include centralizar_column;
+    padding: 1rem 0;
+    span{
+        padding: .5rem 0;
+    }span{
+        &:first-child{
+            @include styleFont($textos,$fontSize_6 ,bold ,$white);
+        }
+        &:last-child{
+            @include styleFont($textos,$fontSize_3 ,normal ,$white);
+        }
+    }
+}
+.colaboradores-flex{
+    @media screen and (min-width:768px){
+        flex-direction: row !important;
+        justify-content: space-around;
+    }
+}

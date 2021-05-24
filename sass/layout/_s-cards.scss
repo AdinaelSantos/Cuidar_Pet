@@ -5,14 +5,13 @@
     padding-bottom: 4rem;
     background-color: $gray-200;
     @media screen and (min-width:1024px){
-        padding: 13rem 0;
+        padding: 14rem 0;
     }
     @media screen and (min-width:1200px){
-        padding: 11rem 0;
+        padding: 12rem 0;
     }
-    @media screen and (min-width:1350px){
-        padding: 9rem 0;
-    }
+   
+   
         
     .s-cards{
         @include blockSize_1;
