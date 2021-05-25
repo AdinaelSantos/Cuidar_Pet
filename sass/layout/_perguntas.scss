@@ -1,0 +1,20 @@
+.perguntas{
+    background-color: $gray-100;
+    .preguntas-container{
+        @include blockSize_1;
+        @media screen and (min-width:1024px){
+            @include blockSize_2;
+        }
+    }
+}
+.perguntas-infor> h2{
+    padding: 1.2rem 0;
+    @include styleFont($titulos, $fontSize_5, bold, $gray-900);
+    text-align: center;
+}
+
+.perguntas-infor> p{
+    @include styleFont($textos, $fontSize_3, normal, $gray-800);
+    text-align: center;
+    margin: .5rem 0 2.5rem;
+}

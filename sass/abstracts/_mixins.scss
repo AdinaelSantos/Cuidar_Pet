@@ -20,7 +20,12 @@
     font-size: $fontSize;
     color: $fontColor;
 }
-
+@mixin flex ($display, $direction, $Wrap, $align){
+    display: $display;
+    flex-direction: $direction;
+    flex-wrap: $Wrap;
+    justify-content: $align;
+}
 @mixin centralizar {
     display: flex;
     align-items: center;

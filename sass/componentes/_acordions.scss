@@ -1,0 +1,32 @@
+$accordion-button-active-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='#{$white}'><path  d='M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z'/></svg>");
+
+$accordion-button-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 426.66667 426.66667' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0'/></svg>");
+
+
+.accordion-button {
+    color: $colorPrimary;
+    background-color: $white;
+    &:not(.collapsed) {
+      color: $white;
+      background-color: $colorPrimary;
+
+      &::after {
+        background-image: escape-svg($accordion-button-active-icon);
+        transform: $accordion-icon-transform;
+      }
+    }
+  
+    // Accordion icon
+    &::after {
+      content: "";
+      background-image: escape-svg($accordion-button-icon);
+    }
+  
+  }
+  
+  
+  // Flush accordion items
+  //
+  // Remove borders and border-radius to keep accordion items edge-to-edge.
+  
+  

@@ -3,17 +3,20 @@
     width: 100%;
     .colaboradores-flex{
         @include blockSize_1;
-        @include centralizar_column;
+        @include flex(flex, row, wrap, space-around); 
         @media screen and (min-width:1024px){
             @include blockSize_2;
         }
     }
 }
 .pessoas, .profissinais, .Pordutos, .animais{
-    @include centralizar_column;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    width: 100%;
+    max-width: 180px;
     span{
         padding: .5rem 0;
+        display: block;
+        text-align: center;
     }span{
         &:first-child{
             @include styleFont($textos,$fontSize_6 ,bold ,$white);
