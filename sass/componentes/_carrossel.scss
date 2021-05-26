@@ -1,0 +1,17 @@
+///////////////////////////////////////////
+
+.carrocel-clients{
+    @include centralizar_column;
+    h2{
+        @include styleFont($titulos, $fontSize_5, bold, $gray-900);
+        text-align:center;
+    }
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+ 

@@ -1,3 +1,6 @@
+///////////////////////////////////////////
+/// ITEMS LOCATED SOON AFTER THE BANNER.
+/// ARTIGOS LOCALIZADOS LOGO APOS O BANNER.
 .s-cards-article{
     position: relative;
     @include centralizar_column;
@@ -68,7 +71,9 @@
         }
 
 }
+/// class added or removed dynamically when hovering over cards.
 //// classe adicionada ou retirada dinamicamente ao passar o mouse nos cards.
+
     #diamnic-card{
         background-color: $colorPrimary;
         .s-card-title, .s-paragraph{
@@ -82,3 +87,53 @@
         transform: translateX(0);
     }
     }
+
+/////////////////////////////////////////////////////////////////////
+/*
+    THIS CARD BELONGS TO THE CUSTOMER TESTIMONIALS AND FEEDBACKS SECTION
+    IT IS CONTAINED IN THE CARROCEL.
+
+    ESTE CARD PERTENÇE A SEÇÃO DE DEPOIMENTOS E FEEDBACKS DE CLIENTES
+    ESTÁ CONTIDO NO CARROCEL.
+*/
+.card-client{
+    position:  relative;
+    width: 100%;
+    background-color: $white;
+    border-radius: .4rem;
+    padding: 1rem;
+    margin: 4rem 0;
+    .fas{
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        @include circle(40px, 40px);
+        @include centralizar;
+        background-color: $colorPrimary;
+        color: $white;
+    }
+    p{
+        @include styleFont($textos, $fontSize_3, normal, $gray-600);
+        line-height: 1.5rem;
+        margin: .5rem 0;
+    }
+}
+.card-client-dados{
+    @include flex (flex, row, nowrap, start);
+    padding: 1rem 0;
+    img{
+        @include circle(80px, 80px);
+
+    }
+    .dados-pessoais{
+        @include flex (flex, column, nowrap, start);
+        align-self: center;
+        margin-left: 1rem;
+        h5{
+            @include styleFont($titulos, $fontSize_4, bold, $gray-900);
+        }
+        span{
+            @include styleFont($textos, $fontSize_3, normal, $gray-600);
+        }
+    }
+}
