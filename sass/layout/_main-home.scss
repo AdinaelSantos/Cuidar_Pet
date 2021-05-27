@@ -1,0 +1,253 @@
+////////////////////////////////////////////////
+///CARD SECTION LOCATED BELOW BANNER.
+///SEÇÃO DE CARTÕES LOCALIZADO ABAIXO DO BANNER.
+.s-conteiner-card{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 4rem;
+    background-color: $gray-200;
+    @media screen and (min-width:1024px){
+        padding: 14rem 0;
+    }
+    @media screen and (min-width:1200px){
+        padding: 12rem 0;
+    }
+   
+   
+        
+    .s-cards{
+        @include blockSize_1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        @media screen and (min-width:1024px){
+            @include blockSize_2;
+            flex-direction: row;
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+
+//////////////////////////////////
+/// SUPPORT AND INFORMATION SECTION.
+/// SEÇÃO DE SUPORTE E INFORMAÇÕES.
+.t-infor-suport{
+    width: 100%;
+    height: auto;
+    background-color: $white;
+    padding-top: 3rem;
+}
+.t-infor{
+    @include blockSize_1;
+    @include centralizar_column;
+    .t-infor-img{
+        
+        img{
+            ///top: 100px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .t-infor-img, .t-infor-article{
+        width:100%;
+        max-width: 400px;
+    }
+    @media screen and (min-width:768px){
+        flex-direction: row;
+        justify-content: start;
+    }
+    @media screen and (min-width:1024px){
+        @include blockSize_2;
+        .t-article{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .t-infor-img{
+            max-width:40%;
+        }
+        .t-infor-article{
+            max-width: 100%;
+        }
+
+    }
+    
+}  
+.t-infor-article{
+    h2{
+        @include styleFont($titulos, $fontSize_5, bolder, $gray-800);
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+}
+.t-article-container{
+   .t-article{
+       margin: 1rem;
+       display: flex;
+       justify-content:start;
+       .img{
+          @include centralizar;
+           @include circle(70px,70px);
+           background-color: $colorPrimary;
+           @include icon(0, 0, $fontSize_5, $white);
+           padding: 1.5rem;
+       }
+       .info{
+           margin-left: .5rem;
+           h3{
+            @include styleFont($textos, $fontSize_4, bold, $gray-900);
+           }
+           p{
+               @include styleFont($textos, $fontSize_3, normal, $gray-700);
+               padding: 1rem 0;
+           }
+       }
+   }
+   @media screen and (min-width:1024px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:start;
+    .t-article{
+        width: 42%;
+    }
+   }
+   @media screen and (min-width:1200px){
+    justify-content: space-between;
+    
+   }
+}
+
+//////////////////////////////////////////////////
+///SECTION INFORMING TOTAL EMPLOYEES, CUSTOMERS, PRODUCTS AND ANIMALS.
+/// SEÇÃO QUE INFORMA TOTAL DE COLABORADORES, CLIENTE, PRODUTOS E ANIMAIS.
+.colaboradores-container{
+    background-color: $colorPrimary;
+    width: 100%;
+    .colaboradores-flex{
+        @include blockSize_1;
+        @include flex(flex, row, wrap, space-around); 
+        @media screen and (min-width:1024px){
+            @include blockSize_2;
+        }
+    }
+}
+.pessoas, .profissinais, .Pordutos, .animais{
+    padding: 2rem 0;
+    width: 100%;
+    max-width: 180px;
+    span{
+        padding: .5rem 0;
+        display: block;
+        text-align: center;
+    }span{
+        &:first-child{
+            @include styleFont($textos,$fontSize_6 ,bold ,$white);
+        }
+        &:last-child{
+            @include styleFont($textos,$fontSize_3 ,normal ,$white);
+        }
+    }
+}
+.colaboradores-flex{
+    @media screen and (min-width:768px){
+        flex-direction: row !important;
+        justify-content: space-around;
+    }
+}
+
+////////////////////////////////////////////////////////
+/// FAQ SECTION INFORMATION SECTION
+/// SEÇÃO DE INFORMAÇÕES DE PERGUNTAS FREQUENTES.
+.perguntas{
+    background-color: $gray-200;
+    .preguntas-container{
+        @include blockSize_1;
+        padding: 4rem 0;
+        @media screen and (min-width:1024px){
+            @include blockSize_2;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            padding: 7rem 0;
+        }
+    }
+}
+.perguntas-infor> h2{
+    @include styleFont($titulos, $fontSize_5, bold, $gray-900);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.perguntas-infor> p{
+    @include styleFont($textos, $fontSize_3, normal, $gray-800);
+    margin: .5rem 0 2.5rem;
+}
+.secao-fotos{
+    width:100%; 
+    margin-top: 4rem;
+    @include flex (flex, row, wrap, center);
+    img{
+        &:first-child{
+            width: 100%;
+        }
+        width: 50%;
+    }
+}
+@media screen and (min-width:1024px){
+    .perguntas-infor{
+        width: 43%;
+    }
+    .secao-fotos{
+        width: 54%;
+        max-width: 458px;
+        max-height: 465px;
+        margin-top: 0;
+    }
+}
+
+////////////////////////////////////////////////////
+/// CUSTOMER CAROUSEL FEEDBACK COMPONENT SECTION.
+/// SEÇÃO DO COMPONENTE CARROSSEL FEEDBACK DOS CLIENTES.
+
+.carrocel-feeedback-client{
+    ///background-image: url('assets/img/bg_2.jpg');
+    background-image: url('bg_img/bg_2.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .carrocel-client-container{
+        @include blockSize_1;
+        padding: 3rem 0;
+        @media screen and (min-width:768px) {
+            @include blockSize_2;
+        }
+    } 
+
+}
+
+//////////////////////////////////////////////
+/// SEÇÃO PERTENCENTE AO CARD DE PACOTES E PROMOÇÕES.
+
+.pacotes{
+    background-color: $gray-200;
+    .pacotes-container{
+        @include blockSize_1;
+        h2{
+           @include styleFont($titulos, $fontSize_5, bolder, $gray-900); 
+           text-align: center;
+           padding: 3rem 0 2rem;
+        }
+    }
+}
+.pacotes-promocionais-groups{
+    @include flex (flex, row, wrap, space-between)
+}

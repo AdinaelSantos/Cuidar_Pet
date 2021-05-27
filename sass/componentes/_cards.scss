@@ -137,3 +137,48 @@
         }
     }
 }
+
+/////////////////////////////////////////////////////////////
+///
+
+.card-pacotes{
+    width: 100%;
+        margin-bottom: 3rem;
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .card-body{
+        .c-title{
+            @include styleFont($titulos, $fontSize_4, bold, $colorPrimary);
+            padding: 1.5rem 0;
+            text-transform: uppercase;
+        }
+        span{
+            @include styleFont($textos, $fontSize_3, normal, $gray-600);
+            strong{
+                font-size: $fontSize_6;
+                color: $black;
+                font-weight: bolder;
+            }
+        }
+        .card-table{
+            width: 100%;
+            margin: 1.5rem 0;
+            tr{
+                &:nth-child(odd){
+                    background-color: $gray-200;
+                }
+            }
+            tr td{
+                @include styleFont($textos, $fontSize_3, normal, $gray-700);
+                text-align: center;
+                padding: .8rem 0;
+            }
+        }
+      }
+      
+      
