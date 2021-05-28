@@ -81,7 +81,7 @@
 }  
 .t-infor-article{
     h2{
-        @include styleFont($titulos, $fontSize_5, bolder, $gray-800);
+        @include styleFont($titulos, $fontSize_5, bolder, $gray-900);
         text-align: center;
         padding-bottom: 2rem;
     }
@@ -106,6 +106,7 @@
            p{
                @include styleFont($textos, $fontSize_3, normal, $gray-700);
                padding: 1rem 0;
+               line-height: 1.5rem;
            }
        }
    }
@@ -189,6 +190,7 @@
 .perguntas-infor> p{
     @include styleFont($textos, $fontSize_3, normal, $gray-800);
     margin: .5rem 0 2.5rem;
+    line-height: 1.5rem;
 }
 .secao-fotos{
     width:100%; 
@@ -241,6 +243,9 @@
     background-color: $gray-200;
     .pacotes-container{
         @include blockSize_1;
+        @media screen and (min-width:1024px){
+            @include blockSize_2;
+        }
         h2{
            @include styleFont($titulos, $fontSize_5, bolder, $gray-900); 
            text-align: center;

@@ -113,7 +113,7 @@
         color: $white;
     }
     p{
-        @include styleFont($textos, $fontSize_3, normal, $gray-600);
+        @include styleFont($textos, $fontSize_3, normal, $gray-800);
         line-height: 1.5rem;
         margin: .5rem 0;
     }
@@ -133,17 +133,24 @@
             @include styleFont($titulos, $fontSize_4, bold, $gray-900);
         }
         span{
-            @include styleFont($textos, $fontSize_3, normal, $gray-600);
+            @include styleFont($textos, $fontSize_3, normal, $gray-800);
         }
     }
 }
 
 /////////////////////////////////////////////////////////////
-///
+/// PROMOTIONAL PACKAGES SECTION.
+/// SEÇÃO DE PACOTES PROMOCIONAIS.
 
 .card-pacotes{
     width: 100%;
-        margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    @media screen and(min-width:1024px) {
+        width: 49%;
+    }
+    @media screen and (min-width:1200px){
+        width: 24.5%;
+    }
         .card-body {
           display: flex;
           flex-direction: column;
@@ -178,6 +185,9 @@
                 text-align: center;
                 padding: .8rem 0;
             }
+        }
+        .btn{
+            color: $white;
         }
       }
       

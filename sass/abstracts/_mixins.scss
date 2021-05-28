@@ -42,3 +42,7 @@
     height: $hegth;
     border-radius: $radius;
 }
+@mixin styleButtom ($color){
+    padding: 1rem;
+    color: $color;
+}
