@@ -1,0 +1,17 @@
+%blockSize_1 {
+    width: 90%;
+    height: inherit;
+    margin: 0 auto;
+}
+
+%centralizar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+%centralizar_column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

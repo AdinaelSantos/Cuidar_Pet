@@ -9,7 +9,7 @@
         align-items: center;
         height: inherit;
         padding: .5rem 0;
-        @include blockSize_1;
+        @extend %blockSize_1;
         @media screen and (min-width:768px){
             flex-direction: row;
             @include blockSize_2;
@@ -17,7 +17,7 @@
     }
 }
 .header nav{
-    @include blockSize_1;
+    @extend %blockSize_1;
     @media screen and (min-width:768px) {
         @include blockSize_2;
     }

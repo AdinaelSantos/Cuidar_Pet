@@ -14,9 +14,9 @@
     }
 }
 .bloco {
-    @include centralizar;
+    @extend %centralizar;
     flex-direction: column;
-    @include blockSize_1;
+    @extend %blockSize_1;
     p{
         @include styleFont($textos, $fontSize_6, bolder, $white);
         text-align: center;

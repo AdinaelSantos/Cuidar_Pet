@@ -3,7 +3,7 @@
 /// ARTIGOS LOCALIZADOS LOGO APOS O BANNER.
 .s-cards-article{
     position: relative;
-    @include centralizar_column;
+    @extend %centralizar_column;
     background-color: $white;
     border-radius: .5rem;
     margin-top: 6rem;
@@ -23,7 +23,7 @@
         display: inline-block;
         margin: .5rem;
         @include circle(100px, 100px);
-        @include centralizar;
+        @extend %centralizar;
         .icon-svg{
             width: 90px;
             height: 90px;
@@ -50,7 +50,7 @@
         position: absolute;
         bottom: -25px;
         @include circle(50px, 50px);
-        @include centralizar;
+        @extend %centralizar;
         background-color: $colorPrimary;
         color: $white;
         transition: background-color 1s, transform 1s;
@@ -108,7 +108,7 @@
         top: -20px;
         left: 20px;
         @include circle(40px, 40px);
-        @include centralizar;
+        @extend %centralizar;
         background-color: $colorPrimary;
         color: $white;
     }

@@ -26,7 +26,6 @@
     .nav-link{
         margin-left: 1rem;
         @include styleFont($textos, $fontSize_3, bold, #2a9134 !important);
-        ///text-transform: uppercase;
         border-bottom: 2px solid $gray-100;
         margin-left: 0;
         transition: color .5s, border-bottom 1s;

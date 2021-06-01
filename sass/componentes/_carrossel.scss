@@ -1,7 +1,7 @@
 ///////////////////////////////////////////
 
 .carrocel-clients{
-    @include centralizar_column;
+    @extend %centralizar_column;
     h2{
         @include styleFont($titulos, $fontSize_5, bold, $gray-900);
         text-align:center;

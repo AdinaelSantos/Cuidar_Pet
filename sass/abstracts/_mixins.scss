@@ -1,8 +1,3 @@
-@mixin blockSize_1 {
-    width: 90%;
-    height: inherit;
-    margin: 0 auto;
-}
 @mixin blockSize_2 {
     width: 70%;
     height: inherit;
@@ -25,16 +20,6 @@
     flex-direction: $direction;
     flex-wrap: $Wrap;
     justify-content: $align;
-}
-@mixin centralizar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@mixin centralizar_column {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 }
 
 @mixin circle($width, $hegth, $radius: 50%){
