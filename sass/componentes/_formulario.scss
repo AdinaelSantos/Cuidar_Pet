@@ -1,0 +1,14 @@
+.form{
+   
+}
+.form-check-label {
+    color: $white;
+    cursor: $form-check-label-cursor;
+  }
+  .form-btm{
+      @include flex (flex, row, nowrap, center);
+      .btn{
+          width: 20%;
+          color: white;
+      }
+  }

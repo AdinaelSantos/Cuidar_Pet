@@ -39,7 +39,6 @@
     .s-paragraph{
         @include styleFont($textos, $fontSize_3, normal, $gray-700);
         padding: .5rem 1.5rem 2rem;
-        line-height: 1.5rem;
         text-align: center;
     }
     .s-card-title, .s-paragraph{
@@ -114,7 +113,6 @@
     }
     p{
         @include styleFont($textos, $fontSize_3, normal, $gray-800);
-        line-height: 1.5rem;
         margin: .5rem 0;
     }
 }
@@ -145,10 +143,10 @@
 .card-pacotes{
     width: 100%;
     margin-bottom: 2rem;
-    @media screen and(min-width:1024px) {
+    @media screen and(min-width:768px) {
         width: 49%;
     }
-    @media screen and (min-width:1200px){
+    @media screen and (min-width:1460px){
         width: 24.5%;
     }
         .card-body {
@@ -191,4 +189,58 @@
         }
       }
       
-      
+      .card-table tr td i{
+          color: $colorPrimary;
+          margin-right: .5rem;
+      }
+
+/////////////////////////////////////////////////////////////
+/// NEWS AND BLOG SECTION.
+/// SEÇÃO DE NOTICIAS E BLOG.
+.article-container-card{
+    @include flex (flex, column, nowrap, center);
+    .card{
+        width: 100%;
+        margin: 1.5rem 0;
+        &:hover{
+            img{
+                filter: saturate(0.3);
+            }
+        }
+        .card-body{
+            .blog-link{
+                @include styleFont($titulos, $fontSize_2, normal, $gray-500);
+                text-transform: uppercase;
+                line-height: 2rem;
+                transition: color .5s;
+                .fas{
+                    font-weight: bold;
+                    margin: 0 .3rem;
+                }
+                &:hover{
+                    color: $colorPrimary;
+                }
+            }
+            .blog-text{
+                @include styleFont($textos, $fontSize_3, normal, $gray-600);
+                margin: .5rem 0;
+                transition: color .5s;
+                &:hover{
+                    color: $colorPrimary;
+                }
+            }
+        }
+    
+    }
+    @media screen and(min-width:768px){
+        flex-direction: row;
+        justify-content: space-between;
+        .card{
+            width: 33%;
+            max-width: 500px;
+            margin-left: .5rem;
+        }
+    }
+    
+}
+
