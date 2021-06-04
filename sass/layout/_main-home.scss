@@ -342,6 +342,7 @@
 /// SECTION OF THE MAIN FORM.
 /// SEÇÃO DO FORMULARIO MAIN.
 .formulario{
+    position: relative;
     background-image: url(bg_img/bg_3.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -361,15 +362,28 @@
                 @include blockSize_2;
                      
                }
+            @media screen and(min-width:(1024px)){
+            margin: auto .8rem;
+                    
+            }
+        }
+    }
+    @media screen and(min-width:1024px){
+        display: flex;
+        justify-content: space-between;
+        .container-transparent, .container-layout{
+            width: 50%;
         }
     }
     
 }
+
 .form-container{
+    padding: 2rem 0;
         h2{
                 @include styleFont($titulos, $fontSize_5, bolder, $gray-100);
                 text-align: center;
-                padding: 2rem 0;
+                padding: 1.5rem 0;
             }
         
         }

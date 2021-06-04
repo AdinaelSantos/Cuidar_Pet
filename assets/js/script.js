@@ -67,3 +67,14 @@ function contagem(){
 
     }
 document.addEventListener('DOMContentLoaded', contagem); 
+
+/*===========SCRIPT PARA INPUT DATE DO FORMULARIO===========*/
+///Data
+let dataHoras = new Date();
+let campoData = document.querySelector('#inputDate1').value = dataHoras.getDate() + '/' + (dataHoras.getMonth()+1) + '/' + dataHoras.getFullYear();
+///hora
+let horas = new Date();
+let campoHora = document.querySelector('input[type="time"]').value = horas.getHours()+ ':' +horas.getMinutes();
+
+console.log(campoData);
+console.log(campoHora );
