@@ -1,8 +1,7 @@
 .banner{
     width: 100%;
-    height: 95vh;
+    height: 100%;
     background-image: url('bg_img/bg_1.jpg');
-    ///background-image: url('/assets/img/bg_1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -14,12 +13,15 @@
     }
 }
 .bloco {
+    padding: 8rem 0;
     @extend %centralizar;
     flex-direction: column;
     @extend %blockSize_1;
     p{
         @include styleFont($textos, $fontSize_6, bolder, $white);
         text-align: center;
+        margin-bottom: 3.5rem;
+        padding: 2rem 0;
     }
     a{
         background-color: $colorPrimary;
@@ -29,7 +31,7 @@
         line-height: 50px;
         text-align: center;
         text-transform: uppercase;
-        margin-top: 2rem;
+        
         word-spacing: .3rem;
         @include styleFont($textos, $fontSize_2, bolder, $white);
         transition: background-color .5s, color 1s;
@@ -39,11 +41,26 @@
             color: $colorPrimary;
         }
     }
-    @media screen and (min-width:768px){
+    @media screen and (min-width:576px){
         @include blockSize_2;
+            p{
+                font-size: $fontSize_7;
+            }
+        }
+    @media screen and (max-height:768){
+        padding: 12rem 0;
         p{
             font-size: $fontSize_8;
+            
         }
-        }
+    }
+    
+    @media screen and (min-width:1024px){
+        padding: 14rem 0;
+            p{
+                font-size: $fontSize_9;
+                margin-bottom: 2.5rem;
+            }
+        }        
    }
  

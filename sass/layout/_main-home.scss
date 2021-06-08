@@ -356,6 +356,10 @@
         width: 100%;
         height: auto;
         padding: 2rem 0;
+        @media screen and(min-width:(1024px)){
+            opacity: 1;
+                 
+           }
         .container-form-layout{
             @extend %blockSize_1;
             @media screen and(min-width:(768px)){
