@@ -1,0 +1,11 @@
+.breadcrumb-item{
+    .breadcrumb-link{
+        color: $white;
+        &:hover{
+            text-decoration: underline;
+        }
+        ///&.active {
+        ///    color: $blue;
+        ///  }
+    }
+}

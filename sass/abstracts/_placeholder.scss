@@ -1,6 +1,6 @@
 %blockSize_1 {
     width: 90%;
-    height: inherit;
+    ///height: inherit;
     margin: 0 auto;
 }
 
@@ -24,6 +24,13 @@
         margin-top: .2em;
         
 }
+%title_h2{
+    font-family: $titulos;
+    font-size: $fontSize_5;
+    font-weight: bold;
+    color: $colorGray-800;
+}
+
 %title_h3{
     font-family: $titulos;
     font-size: $fontSize_4;

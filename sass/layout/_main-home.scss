@@ -81,7 +81,7 @@
 }  
 .t-infor-article{
     h2{
-        @include styleFont($titulos, $fontSize_5, bolder, $gray-900);
+        @extend %title_h2;
         text-align: center;
         padding-bottom: 2rem;
     }
@@ -185,7 +185,7 @@
     }
 }
 .perguntas-infor> h2{
-    @include styleFont($titulos, $fontSize_5, bold, $gray-900);
+    @extend %title_h2;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -252,7 +252,7 @@
             @include blockSize_2;
         }
         h2{
-           @include styleFont($titulos, $fontSize_5, bolder, $gray-900); 
+            @extend %title_h2;
            text-align: center;
            padding: 3rem;
         }
@@ -272,7 +272,7 @@
     }
     padding: 3.5rem 0;
     h2{
-        @include styleFont($titulos, $fontSize_5, bolder, $gray-900);
+        @extend %title_h2;
         text-align: center;
         margin-bottom: 3rem;
 
@@ -331,7 +331,7 @@
             @include blockSize_2;
         }
         h2{
-            @include styleFont($titulos, $fontSize_5, bolder, $gray-900);
+            @extend %title_h2;
             padding: 2rem 0;
             text-align: center;
         }

@@ -32,13 +32,12 @@
         }
     }
     .s-card-title{
-        margin: 5rem 0 1rem;
-        @include styleFont($titulos, $fontSize_4, bold, $gray-900);
-        text-transform: uppercase;
+        margin: 4rem 0 1rem;
+        @extend %title_h2;
     }
     .s-paragraph{
         @include styleFont($textos, $fontSize_3, normal, $gray-700);
-        padding: .5rem 1.5rem 2rem;
+        padding: .5rem 1.5rem 3rem;
         text-align: center;
     }
     .s-card-title, .s-paragraph{
@@ -244,3 +243,20 @@
     
 }
 
+/*=================PAGE VETERINARIANS=================*/
+///Card belonging to veterinarians
+///Card pertencente aos veterinarios
+
+.veterinarians-card{
+    width: 100%;
+    margin-bottom: 1rem;
+    @media screen and(min-width:567px){
+        width: calc(50% - .5rem);
+        height: calc(auto - 1rem);
+    }
+    
+    @media screen and(min-width:1200px){
+        width: calc(25% - 1rem);
+
+    }
+}
