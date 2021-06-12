@@ -3,6 +3,7 @@
         color: $white;
         &:hover{
             text-decoration: underline;
+            transform: scale(.5);
         }
         ///&.active {
         ///    color: $blue;

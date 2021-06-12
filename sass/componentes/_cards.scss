@@ -259,4 +259,16 @@
         width: calc(25% - 1rem);
 
     }
+    .card-body{
+        .card-title{
+            @include styleFont($titulos, $fontSize_4, bold, $gray-800);
+        }
+        .card-subtitle{
+            @include styleFont($titulos, $fontSize_3, bold, $gray-700);
+            font-style: italic;
+        }
+        .card-text{
+            @include styleFont($textos, $fontSize_3, normal, $gray-600);
+        }
+    }
 }

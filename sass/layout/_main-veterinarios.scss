@@ -1,32 +1,3 @@
-.v-main-banner{
-    background-image: url(/assets/img/bg_2.jpg);
-    background-position: top center;
-   /// background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    .v-opacity{
-        background-image: linear-gradient(to right, $colorSecundary, $colorPrimary);
-        filter: opacity(.5);
-    }
-}
-.v-container{
-    position: relative;
-    @extend %blockSize_1;
-    height: 50vh;
-    @media screen and(min-width:768px){
-        @include blockSize_2;
-    }
-    div{
-        position: absolute;
-        bottom: 2rem;
-        h2{
-            @include styleFont($titulos, $fontSize_5, bolder, $white);
-        }
-    }
-}
 
 /*=================PAGE VETERINARIANS=================*/
 ///Card belonging to veterinarians

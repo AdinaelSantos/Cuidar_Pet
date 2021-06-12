@@ -1,0 +1,16 @@
+.title-navigation{
+    position: relative;
+    @extend %blockSize_1;
+    height: 50vh;
+    @media screen and(min-width:768px){
+        @include blockSize_2;
+    }
+    div{
+        position: absolute;
+        bottom: 2rem;
+        h2{
+            @include styleFont($titulos, $fontSize_5, bolder, $white);
+
+        }
+    }
+}
