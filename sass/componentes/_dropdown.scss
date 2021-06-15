@@ -1,0 +1,25 @@
+
+  .dropdown-item {
+    color: $gray-900;
+    font-size: 1rem;
+    font-family: $textos;
+    line-height: 1.8rem;
+    &:hover,
+    &:focus {
+      color: $white;
+      @include gradient-bg($Primary-color);
+    }
+  
+    &.active,
+    &:active {
+      color: $white;
+      text-decoration: none;
+      @include gradient-bg($Primary-color);
+    }
+  
+  }
+  
+  
+  
+  
+  
