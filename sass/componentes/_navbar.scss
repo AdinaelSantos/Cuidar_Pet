@@ -25,19 +25,22 @@
 .nav-item{
     .nav-link{
         margin-left: 1rem;
-        @include styleFont($textos, $fontSize_3, bold, #2a9134 !important);
+        @include styleFont($textos, $fontSize_3, bold, $Primary-color !important);
         border-bottom: 2px solid $gray-100;
         margin-left: 0;
         transition: color .5s, border-bottom 1s;
         &:hover{
-            border-bottom: 2px solid #2a9134;
+            border-bottom: 2px solid $Primary-color;
             color: $gray-300 !important;
         }
+        &.disabled {
+            color: $nav-link-disabled-color !important;
+          }
         @media screen and(min-width:1140px) {
             color: $black !important;
             &:hover{
-                border-bottom: 2px solid #2a9134;
-                color: #2a9134 !important;
+                border-bottom: 2px solid $Primary-color;
+                color: $Primary-color !important;
             }
         }
         @media screen and(min-width:1320px){
@@ -46,8 +49,8 @@
     }
     @media screen and(min-width:1140px) {
     .link-ativo{
-        color: #2a9134;
-            border-bottom: 2px solid #2a9134;
+        color: $Primary-color;
+            border-bottom: 2px solid $Primary-color;
         
         }
     }

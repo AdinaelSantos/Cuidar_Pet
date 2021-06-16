@@ -1,6 +1,5 @@
 @mixin blockSize_2 {
     width: 70%;
-    ///height: inherit;
     margin: 0 auto;
 }
 @mixin styleFont($fontFamily, $fontSize, $fontWeight, $fontColor){

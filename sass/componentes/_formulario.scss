@@ -7,6 +7,6 @@
       @include flex (flex, row, nowrap, center);
       .btn{
           width: 30%;
-          color: white;
+          color: $white;
       }
   }
