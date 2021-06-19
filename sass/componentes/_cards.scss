@@ -5,9 +5,10 @@
     position: relative;
     @extend %centralizar_column;
     background-color: $white;
+    transition: background-color 1s;
     border-radius: .5rem;
     margin-top: 6rem;
-    transition: background-color 1s;
+    
     @media screen and (min-width:1024px){
         width: 32%;
         margin-top: 0;

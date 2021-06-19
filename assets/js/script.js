@@ -1,9 +1,18 @@
+/*===================================================================== */
+/// ANIMANDO O BANNER
+const banner = document.querySelector('.bloco');
+
+window.addEventListener('DOMContentLoaded', function(){
+    banner.classList.add('blocoAnimate');
+});
 
 /*
     Este evento adiciona ou remove o atributo 'id' ao s-card-article.
     mouseenter: ao entrar no s-card-article remove o 'id='diamnic-card'.
     mouseout: ao sair do s-card-article adiciona o 'id='diamnic-card'
 */
+
+/*==================================================================== */
 const sCardArticle = document.querySelectorAll('.s-cards-article');
 
 for(let i=0;i<sCardArticle.length;i++){
@@ -17,6 +26,7 @@ for(let i=0;i<sCardArticle.length;i++){
         sCardArticle[0].setAttribute('id', 'diamnic-card');
     })
 }
+
 
 /*=======================CONTADORES=======================*/
 /*
@@ -78,3 +88,47 @@ let campoHora = document.querySelector('input[type="time"]').value = horas.getHo
 
 console.log(campoData);
 console.log(campoHora );
+
+/*===============================================================================*/
+/*===================================================================== */
+////ANIMAÇÕES NO SCROLL
+// Detect request animation frame
+var scroll = window.requestAnimationFrame ||
+             // IE Fallback
+             function(callback){ window.setTimeout(callback, 1000/60)};
+var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+
+function loop() {
+
+    Array.prototype.forEach.call(elementsToShow, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('is-visible');
+      } else {
+        element.classList.remove('is-visible');
+      }
+    });
+
+    scroll(loop);
+}
+
+// Call the loop for the first time
+loop();
+
+// Helper function from: http://stackoverflow.com/a/7557433/274826
+function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+    el = el[0];
+  }
+  var rect = el.getBoundingClientRect();
+  return (
+    (rect.top <= 0
+      && rect.bottom >= 0)
+    ||
+    (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+    ||
+    (rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+  );
+}

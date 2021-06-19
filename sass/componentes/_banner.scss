@@ -17,6 +17,11 @@
     @extend %centralizar;
     flex-direction: column;
     @extend %blockSize_1;
+    transform: translateY(2.5rem);
+    opacity: 0;
+    transition: transform 2s, opacity 2s;
+    
+    
     p{
         @include styleFont($textos, $fontSize_6, bolder, $white);
         text-align: center;
@@ -31,7 +36,6 @@
         line-height: 50px;
         text-align: center;
         text-transform: uppercase;
-        
         word-spacing: .3rem;
         @include styleFont($textos, $fontSize_2, bolder, $white);
         transition: background-color .5s, color 1s;
@@ -62,5 +66,5 @@
                 margin-bottom: 2.5rem;
             }
         }        
-   }
+}
  
